@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="World Trivia — quizzes, categories and high scores for trivia fans.">
+  <title>World Trivia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div class="header-inner">
+      <p class="logo">World Trivia</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#trivia">Trivia</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#scores">Scores</a></li>
+          <li><a href="#subscribe">Subscribe</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" aria-labelledby="home-title">
+      <h1 id="home-title">Welcome to World Trivia</h1>
+      <p>World Trivia is a place for everyone who loves to learn something new every day. Take quizzes on history, science, geography and pop culture, compete with players from around the world and climb the leaderboard.</p>
+    </section>
+
+    <section id="trivia" aria-labelledby="trivia-title">
+      <h2 id="trivia-title">Trivia</h2>
+      <article class="trivia-item">
+        <img src="img/trivia1.svg" alt="Blue card with a question mark symbolising a general knowledge quiz">
+        <div>
+          <h3>General Knowledge</h3>
+          <p>Mix of questions from all areas of life. Perfect for a warm-up: which is the longest river in Europe, and who painted the Mona Lisa?</p>
+        </div>
+      </article>
+      <article class="trivia-item">
+        <img src="img/trivia2.svg" alt="Orange card with a star symbolising the daily challenge">
+        <div>
+          <h3>Daily Challenge</h3>
+          <p>Ten new questions every day. Answer fast, keep your streak alive and earn bonus points for perfect rounds.</p>
+        </div>
+      </article>
+      <article class="trivia-item">
+        <img src="img/trivia3.svg" alt="Green card with a chess knight symbolising the strategy and logic puzzles">
+        <div>
+          <h3>Logic Puzzles</h3>
+          <p>Riddles, sequences and brain teasers that train attention and critical thinking.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="categories" aria-labelledby="categories-title">
+      <h2 id="categories-title">Categories</h2>
+      <ul class="category-list">
+        <li><a href="#categories">History</a></li>
+        <li><a href="#categories">Science</a></li>
+        <li><a href="#categories">Geography</a></li>
+        <li><a href="#categories">Movies</a></li>
+        <li><a href="#categories">Music</a></li>
+        <li><a href="#categories">Sports</a></li>
+      </ul>
+    </section>
+
+    <section id="scores" aria-labelledby="scores-title">
+      <h2 id="scores-title">Scores</h2>
+      <div class="table-wrap">
+        <table>
+          <caption class="sr-only">Top players leaderboard</caption>
+          <thead>
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">Name</th>
+              <th scope="col">Score</th>
+              <th scope="col">Country</th>
+              <th scope="col">Category</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Olena K.</td><td>9850</td><td>Ukraine</td><td>History</td><td>2025-11-10</td></tr>
+            <tr><td>2</td><td>James W.</td><td>9420</td><td>United Kingdom</td><td>Science</td><td>2025-11-09</td></tr>
+            <tr><td>3</td><td>Marta P.</td><td>9105</td><td>Poland</td><td>Geography</td><td>2025-11-12</td></tr>
+            <tr><td>4</td><td>Lukas M.</td><td>8870</td><td>Germany</td><td>Movies</td><td>2025-11-08</td></tr>
+            <tr><td>5</td><td>Sofia R.</td><td>8640</td><td>Spain</td><td>Music</td><td>2025-11-11</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="subscribe" aria-labelledby="subscribe-title">
+      <h2 id="subscribe-title">Subscribe</h2>
+      <p>Get a fresh brain teaser in your inbox every morning.</p>
+      <button type="button" class="pulse-btn" aria-label="Subscribe to Puzzle of the Day">Puzzle of the Day</button>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>Have a question or a suggestion for a new quiz? Write to us and we will reply within two working days.</p>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 World Trivia. All rights reserved.</p>
+  </footer>
+</body>
+</html>
